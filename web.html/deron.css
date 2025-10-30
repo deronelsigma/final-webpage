@@ -1,0 +1,22 @@
+p{
+    color: rgb(10, 165, 165);
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 700;
+    background-color: black;
+    padding: 10px;
+    margin-top: 30px;
+}
+ 
+.box{
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+}padding top 
+padding :right
