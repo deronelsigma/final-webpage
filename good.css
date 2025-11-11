@@ -1,0 +1,31 @@
+body { font-family: Arial; padding:20px; line-height:1.4; }
+h1 { text-align:center; margin-bottom:20px; }
+
+/* Box Sizing */
+.box { width:150px; padding:20px; border:5px solid #333; margin:5px; text-align:center; display:inline-block;}
+.content-box { box-sizing:content-box; background:#f8b400; }
+.border-box { box-sizing:border-box; background:#4caf50; color:white; }
+
+/* Overflow */
+.overflow { width:200px; height:40px; border:2px solid #333; margin:5px; padding:5px; overflow:visible; background:#ddd; }
+.hidden { overflow:hidden; } .scroll { overflow:scroll; } .auto { overflow:auto; }
+
+/* Text Overflow */
+.text-overflow { width:200px; border:2px solid #333; padding:5px; white-space:nowrap; overflow:hidden; }
+.ellipsis { text-overflow:ellipsis; }
+
+/* Position */
+.position-container { position:relative; height:150px; border:2px solid #333; margin:10px 0;}
+.pos { width:80px; height:40px; color:white; text-align:center; line-height:40px; margin:2px; }
+.static { position:static; background:#f44336; }
+.relative { position:relative; top:5px; left:5px; background:#2196f3; }
+.absolute { position:absolute; top:20px; left:20px; background:#ff9800; }
+.fixed { position:fixed; top:5px; right:5px; background:#9c27b0; }
+.sticky { position:sticky; top:0; background:#00bcd4; }
+
+/* Z-Index */
+.z-container { position:relative; height:120px; margin:10px 0;}
+.z-box { position:absolute; width:80px; height:80px; text-align:center; line-height:80px; color:white;}
+.z1 { background:#f44336; top:10px; left:10px; z-index:1;}
+.z2 { background:#2196f3; top:20px; left:20px; z-index:2;}
+.z3 { background:#ff9800; top:30px; left:30px; z-index:3;}
