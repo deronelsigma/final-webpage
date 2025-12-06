@@ -1,0 +1,14 @@
+COMENTARIO - DERON REYES
+
+¿Qué pasa cuando cambias el padding o el margin?
+
+- El padding aumenta el espacio interno entre el contenido y el borde.
+- Cuando aumentas el padding, la caja se hace más grande porque empuja el borde hacia afuera.
+- El margin crea espacio por fuera de la caja, separándola de otras cajas. 
+- Aumentar el margin no cambia el tamaño de la caja, solo su posición y separación.
+
+¿Cómo afecta el tamaño del borde a las dimensiones de la caja?
+
+- Cuando el borde aumenta, la caja se hace más grande.
+- El borde forma parte del tamaño total del elemento (content + padding + border).
+- Esto significa que un borde más grueso incrementa las dimensiones totales visibles de la caja.
