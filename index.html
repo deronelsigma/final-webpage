@@ -1,90 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Personal Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog de Comida Internacional</title>
 <style>
     /* GLOBAL STYLES */
     body {
-        font-family: Arial, sans-serif;
+        font-family: "Times New Roman", Times, serif;
         font-size: 16px;
         line-height: 1.6;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-color: #f8f2f0;
     }
 
     h1, h2, h3, p {
         text-align: left;
     }
 
-    /* FLEX CONTAINER FOR LAYOUT */
+    header {
+        background-color: #d9534f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        padding: 8px 12px;
+    }
+
+    nav a:hover {
+        background-color: #555;
+        border-radius: 4px;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
         padding: 20px;
     }
 
-    /* SIDEBAR & MAIN CONTENT */
     .sidebar {
         width: 25%;
         padding: 20px;
-        border: 2px solid #333;
+        border: 2px solid #ccc;
         background-color: #fff;
     }
 
     .content {
         width: 70%;
         padding: 20px;
-        border: 2px solid #333;
+        border: 2px solid #ccc;
         background-color: #fff;
     }
 
-    /* NAVIGATION BAR */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        background: #111;
+    .sidebar h2 {
+        margin-top: 0;
+    }
+
+    .food-box {
+        border: 2px solid #d9534f;
+        margin: 20px 0;
         padding: 15px;
-    }
-
-    nav a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-        padding: 8px 12px;
-    }
-
-    nav a:hover {
-        background: #444;
-        text-decoration: underline;
+        background-color: #fff3f2;
     }
 
     button {
         cursor: pointer;
         padding: 8px 12px;
         margin-top: 10px;
-        background-color: #333;
+        background-color: #d9534f;
         color: white;
         border: none;
         border-radius: 4px;
+        font-family: "Times New Roman", Times, serif;
     }
 
     button:hover {
-        background-color: #555;
-    }
-
-    /* POST BOX */
-    .post-box {
-        padding: 15px;
-        margin: 20px 0;
-        border: 2px solid #666;
-        background-color: #fafafa;
-    }
-
-    .sidebar > ul > li {
-        margin-bottom: 10px;
+        background-color: #c9302c;
     }
 
     .more-content {
@@ -92,73 +96,99 @@
         margin-top: 10px;
         padding: 10px;
         border-top: 1px dashed #999;
+        background-color: #fff8f7;
     }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
+    }
+
 </style>
 </head>
 <body>
 
 <header>
-    <h1>My Gaming & Tech Blog</h1>
+    <h1>Blog de Comida Internacional</h1>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Reviews</a>
-    <a href="#">Guides</a>
-    <a href="#">Contact</a>
+    <a href="#">Inicio</a>
+    <a href="#">Comidas Populares</a>
+    <a href="#">Recetas</a>
+    <a href="#">Contacto</a>
 </nav>
 
 <div class="container">
 
     <aside class="sidebar">
-        <h2>Categories</h2>
+        <h2>Sobre este Blog</h2>
+        <p>Explora las comidas más populares del mundo, sus recetas, origen y tradiciones. Aprende dónde conseguir los ingredientes y qué bebidas suelen acompañarlas.</p>
+        <h2>Categorías</h2>
         <ul>
-            <li>Game Reviews</li>
-            <li>Tech Tips</li>
-            <li>Console News</li>
-            <li>PC Builds</li>
+            <li>Comidas Populares</li>
+            <li>Recetas Internacionales</li>
+            <li>Bebidas Típicas</li>
+            <li>Consejos de Cocina</li>
         </ul>
-
-        <h2>About Me</h2>
-        <p>Hi! I'm Deron Miguel, a gaming enthusiast and tech lover. I share reviews, guides, and tips to help you get the most out of your gaming and tech experience.</p>
     </aside>
 
     <main class="content">
-        <h2>Latest Posts</h2>
+        <h2>Comidas Populares del Mundo</h2>
 
-        <div class="post-box">
-            <h3>Review: The Most Popular Game of 2025</h3>
-            <p>This game completely changed the gaming world with its insane graphics, fast gameplay, and creative open world. Definitely a must-play!</p>
+        <div class="food-box">
+            <h3>Pizza (Italia)</h3>
+            <p>La pizza es una de las comidas más famosas del mundo. Originaria de Nápoles, Italia, se caracteriza por su masa redonda, salsa de tomate, queso y variedad de ingredientes.</p>
             <div class="more-content">
-                <p>The game features a vast open-world map, hundreds of side quests, and a dynamic weather system that affects gameplay. Multiplayer mode allows you to team up with friends and participate in exciting challenges. Critics have praised its story and character development.</p>
-            </div>
-            <button onclick="toggleContent(this)">Read More</button>
-        </div>
-
-        <div class="post-box">
-            <h3>Top 5 Tips to Improve Your Aim</h3>
-            <p>Practicing aim doesn't have to be hard. Here are the best exercises used by pro players that you can start today.</p>
-            <div class="more-content">
-                <ol>
-                    <li>Use aim trainers like Aim Lab or Kovaak’s FPS Aim Trainer.</li>
-                    <li>Practice tracking moving targets daily.</li>
-                    <li>Adjust your mouse sensitivity to find what feels natural.</li>
-                    <li>Warm up before every gaming session with 10-15 minutes of drills.</li>
-                    <li>Focus on posture and hand positioning to maintain consistency.</li>
-                </ol>
-            </div>
-            <button onclick="toggleContent(this)">Read More</button>
-        </div>
-
-        <div class="post-box">
-            <h3>Best Budget PC Builds of 2025</h3>
-            <p>Looking for a powerful PC without breaking the bank? Check out these budget-friendly builds!</p>
-            <div class="more-content">
+                <p><strong>Por qué es famosa:</strong> Fácil de compartir, deliciosa y con infinitas combinaciones de sabores. Se popularizó en todo el mundo gracias a su sencillez y sabor universal.</p>
+                <p><strong>Receta básica de pizza:</strong></p>
                 <ul>
-                    <li>Build 1: Great for entry-level gaming and streaming.</li>
-                    <li>Build 2: Balanced performance for competitive esports titles.</li>
-                    <li>Build 3: Budget powerhouse for AAA games at 1080p.</li>
+                    <li>Masa: 500 g de harina, 300 ml de agua, 1 cdita de sal, 1 cdita de azúcar, 7 g de levadura seca</li>
+                    <li>Salsa: Tomate triturado, ajo, aceite de oliva, sal y orégano</li>
+                    <li>Ingredientes: Queso mozzarella, pepperoni, champiñones, pimientos (opcional)</li>
                 </ul>
+                <p>Preparación: Mezcla la harina, agua, sal, azúcar y levadura. Deja reposar 1 hora. Extiende la masa, agrega la salsa, el queso y los ingredientes. Hornea a 220°C por 12-15 minutos.</p>
+                <p><strong>Dónde conseguir los ingredientes:</strong> Supermercados locales, tiendas italianas o mercados de alimentos internacionales.</p>
+                <p><strong>Bebidas que acompañan:</strong> Vino tinto italiano, cerveza, refrescos o agua mineral.</p>
+            </div>
+            <button onclick="toggleContent(this)">Read More</button>
+        </div>
+
+        <div class="food-box">
+            <h3>Sushi (Japón)</h3>
+            <p>El sushi es un plato tradicional japonés que combina arroz avinagrado con pescado crudo, mariscos o vegetales. Es famoso por su presentación artística y sabor delicado.</p>
+            <div class="more-content">
+                <p><strong>Por qué es famoso:</strong> Es saludable, ligero y combina sabores únicos con una presentación visual atractiva. Popular en todo el mundo, especialmente en restaurantes de cocina japonesa.</p>
+                <p><strong>Receta básica de sushi rolls (makis):</strong></p>
+                <ul>
+                    <li>Arroz para sushi: 2 tazas, lavado y cocido con vinagre de arroz</li>
+                    <li>Nori (alga seca)</li>
+                    <li>Rellenos: Salmón, aguacate, pepino, atún (opcional)</li>
+                    <li>Salsa de soya, wasabi y jengibre encurtido para acompañar</li>
+                </ul>
+                <p>Preparación: Coloca una lámina de nori sobre la esterilla, extiende el arroz, agrega rellenos en el centro y enrolla firmemente. Corta en piezas y sirve con salsa de soya, wasabi y jengibre.</p>
+                <p><strong>Dónde conseguir los ingredientes:</strong> Tiendas asiáticas, supermercados con sección internacional.</p>
+                <p><strong>Bebidas que acompañan:</strong> Té verde, sake japonés, cerveza japonesa.</p>
+            </div>
+            <button onclick="toggleContent(this)">Read More</button>
+        </div>
+
+        <div class="food-box">
+            <h3>Burger (Estados Unidos)</h3>
+            <p>La hamburguesa es un icono de la comida rápida estadounidense, conocida por su carne jugosa, pan, queso y toppings variados.</p>
+            <div class="more-content">
+                <p><strong>Por qué es famosa:</strong> Es rápida de preparar, muy sabrosa y personalizable con muchos ingredientes. Es un símbolo de la comida rápida y cultura pop estadounidense.</p>
+                <p><strong>Receta básica:</strong></p>
+                <ul>
+                    <li>Carne molida de res: 200 g por burger</li>
+                    <li>Pan de hamburguesa</li>
+                    <li>Queso cheddar, lechuga, tomate, cebolla, ketchup y mostaza</li>
+                </ul>
+                <p>Preparación: Forma la carne en hamburguesas y cocina a la plancha. Arma el burger con pan, carne, queso y vegetales.</p>
+                <p><strong>Dónde conseguir los ingredientes:</strong> Supermercados locales, carnicerías y panaderías.</p>
+                <p><strong>Bebidas que acompañan:</strong> Refrescos, cerveza, batidos de frutas.</p>
             </div>
             <button onclick="toggleContent(this)">Read More</button>
         </div>
@@ -166,8 +196,8 @@
     </main>
 </div>
 
-<footer style="text-align:center; padding:20px; background:#222; color:white;">
-    © 2025 My Personal Blog
+<footer>
+    © 2025 Blog de Comida Internacional
 </footer>
 
 <script>
