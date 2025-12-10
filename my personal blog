@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Blog</title>
+    <style>
+        /* GLOBAL STYLES */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, p {
+            text-align: left;
+        }
+
+        /* FLEX CONTAINER FOR LAYOUT */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* SIDEBAR & MAIN CONTENT */
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            border: 2px solid #333;
+        }
+
+        .content {
+            width: 70%;
+            padding: 20px;
+            border: 2px solid #333;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background: #111;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        /* PSEUDO-CLASSES */
+        nav a:hover {
+            background: #444;
+            text-decoration: underline;
+        }
+
+        button:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /* BOX MODEL DEMO */
+        .post-box {
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #666;
+        }
+
+        /* PARENT → CHILD SELECTOR */
+        .sidebar > ul > li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Gaming & Tech Blog</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reviews</a>
+        <a href="#">Guides</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>Game Reviews</li>
+                <li>Tech Tips</li>
+                <li>Console News</li>
+                <li>PC Builds</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h2>Latest Post</h2>
+
+            <div class="post-box">
+                <h3>Review: The Most Popular Game of 2025</h3>
+                <p>
+                    This game completely changed the gaming world with its insane graphics, fast gameplay,
+                    and creative open world. Definitely a must-play!
+                </p>
+                <button>Read More</button>
+            </div>
+
+            <div class="post-box">
+                <h3>Top 5 Tips to Improve Your Aim</h3>
+                <p>
+                    Practicing aim doesn't have to be hard. Here are the best exercises used by pro players
+                    that you can start today.
+                </p>
+                <button>Read More</button>
+            </div>
+        </main>
+    </div>
+
+    <footer style="text-align:center; padding:20px; background:#222; color:white;">
+        © 2025 My Personal Blog
+    </footer>
+
+</body>
+</html>
