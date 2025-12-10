@@ -125,4 +125,93 @@
 
     <aside class="sidebar">
         <h2>About this Blog</h2>
-        <p>Explore the most popular foods around the world, their recipes, origins, and traditions. Learn where to find ingredients and which drink
+        <p>Explore the most popular foods around the world, their recipes, origins, and traditions. Learn where to find ingredients and which drinks usually accompany them.</p>
+        <h2>Categories</h2>
+        <ul>
+            <li>Popular Foods</li>
+            <li>International Recipes</li>
+            <li>Typical Drinks</li>
+            <li>Cooking Tips</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h2>Popular Foods Around the World</h2>
+
+        <div class="food-box">
+            <h3>Pizza (Italy)</h3>
+            <p>Pizza is one of the most famous foods worldwide. Originating from Naples, Italy, it is known for its round crust, tomato sauce, cheese, and variety of toppings.</p>
+            <div class="more-content">
+                <p><strong>Why it is famous:</strong> Easy to share, delicious, and with endless flavor combinations. It became popular worldwide thanks to its simplicity and universal taste.</p>
+                <p><strong>Basic Pizza Recipe:</strong></p>
+                <ul>
+                    <li>Dough: 500 g flour, 300 ml water, 1 tsp salt, 1 tsp sugar, 7 g dry yeast</li>
+                    <li>Sauce: Crushed tomatoes, garlic, olive oil, salt, and oregano</li>
+                    <li>Toppings: Mozzarella cheese, pepperoni, mushrooms, peppers (optional)</li>
+                </ul>
+                <p>Preparation: Mix flour, water, salt, sugar, and yeast. Let rest 1 hour. Roll out dough, add sauce, cheese, and toppings. Bake at 220°C for 12–15 minutes.</p>
+                <p><strong>Where to get ingredients:</strong> Local supermarkets, Italian stores, or international food markets.</p>
+                <p><strong>Drinks to pair:</strong> Italian red wine, beer, soft drinks, or mineral water.</p>
+            </div>
+            <button onclick="toggleContent(this)">Read More</button>
+        </div>
+
+        <div class="food-box">
+            <h3>Sushi (Japan)</h3>
+            <p>Sushi is a traditional Japanese dish combining vinegared rice with raw fish, seafood, or vegetables. It is famous for its artistic presentation and delicate flavor.</p>
+            <div class="more-content">
+                <p><strong>Why it is famous:</strong> Healthy, light, and combines unique flavors with attractive presentation. Popular worldwide, especially in Japanese restaurants.</p>
+                <p><strong>Basic Sushi Rolls Recipe (Makis):</strong></p>
+                <ul>
+                    <li>Sushi rice: 2 cups, washed and cooked with rice vinegar</li>
+                    <li>Nori (seaweed sheets)</li>
+                    <li>Fillings: Salmon, avocado, cucumber, tuna (optional)</li>
+                    <li>Soy sauce, wasabi, and pickled ginger to serve</li>
+                </ul>
+                <p>Preparation: Place a nori sheet on the rolling mat, spread the rice, add fillings in the center, and roll tightly. Cut into pieces and serve with soy sauce, wasabi, and ginger.</p>
+                <p><strong>Where to get ingredients:</strong> Asian stores, supermarkets with international section.</p>
+                <p><strong>Drinks to pair:</strong> Green tea, Japanese sake, Japanese beer.</p>
+            </div>
+            <button onclick="toggleContent(this)">Read More</button>
+        </div>
+
+        <div class="food-box">
+            <h3>Burger (United States)</h3>
+            <p>The burger is an icon of American fast food, known for juicy meat, bread, cheese, and various toppings.</p>
+            <div class="more-content">
+                <p><strong>Why it is famous:</strong> Quick to prepare, very tasty, and customizable with many ingredients. It is a symbol of fast food and American pop culture.</p>
+                <p><strong>Basic Recipe:</strong></p>
+                <ul>
+                    <li>Ground beef: 200 g per burger</li>
+                    <li>Burger bun</li>
+                    <li>Cheddar cheese, lettuce, tomato, onion, ketchup, and mustard</li>
+                </ul>
+                <p>Preparation: Shape the beef into patties and cook on a griddle. Assemble the burger with bun, meat, cheese, and vegetables.</p>
+                <p><strong>Where to get ingredients:</strong> Local supermarkets, butcher shops, and bakeries.</p>
+                <p><strong>Drinks to pair:</strong> Soft drinks, beer, fruit shakes.</p>
+            </div>
+            <button onclick="toggleContent(this)">Read More</button>
+        </div>
+
+    </main>
+</div>
+
+<footer>
+    © 2025 International Food Blog
+</footer>
+
+<script>
+function toggleContent(button) {
+    const more = button.previousElementSibling;
+    if (more.style.display === "block") {
+        more.style.display = "none";
+        button.textContent = "Read More";
+    } else {
+        more.style.display = "block";
+        button.textContent = "Read Less";
+    }
+}
+</script>
+
+</body>
+</html>
