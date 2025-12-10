@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog de Comida Internacional</title>
+<title>International Food Blog</title>
 <style>
     /* GLOBAL STYLES */
     body {
@@ -111,107 +111,18 @@
 <body>
 
 <header>
-    <h1>Blog de Comida Internacional</h1>
+    <h1>International Food Blog</h1>
 </header>
 
 <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Comidas Populares</a>
-    <a href="#">Recetas</a>
-    <a href="#">Contacto</a>
+    <a href="#">Home</a>
+    <a href="#">Popular Foods</a>
+    <a href="#">Recipes</a>
+    <a href="#">Contact</a>
 </nav>
 
 <div class="container">
 
     <aside class="sidebar">
-        <h2>Sobre este Blog</h2>
-        <p>Explora las comidas más populares del mundo, sus recetas, origen y tradiciones. Aprende dónde conseguir los ingredientes y qué bebidas suelen acompañarlas.</p>
-        <h2>Categorías</h2>
-        <ul>
-            <li>Comidas Populares</li>
-            <li>Recetas Internacionales</li>
-            <li>Bebidas Típicas</li>
-            <li>Consejos de Cocina</li>
-        </ul>
-    </aside>
-
-    <main class="content">
-        <h2>Comidas Populares del Mundo</h2>
-
-        <div class="food-box">
-            <h3>Pizza (Italia)</h3>
-            <p>La pizza es una de las comidas más famosas del mundo. Originaria de Nápoles, Italia, se caracteriza por su masa redonda, salsa de tomate, queso y variedad de ingredientes.</p>
-            <div class="more-content">
-                <p><strong>Por qué es famosa:</strong> Fácil de compartir, deliciosa y con infinitas combinaciones de sabores. Se popularizó en todo el mundo gracias a su sencillez y sabor universal.</p>
-                <p><strong>Receta básica de pizza:</strong></p>
-                <ul>
-                    <li>Masa: 500 g de harina, 300 ml de agua, 1 cdita de sal, 1 cdita de azúcar, 7 g de levadura seca</li>
-                    <li>Salsa: Tomate triturado, ajo, aceite de oliva, sal y orégano</li>
-                    <li>Ingredientes: Queso mozzarella, pepperoni, champiñones, pimientos (opcional)</li>
-                </ul>
-                <p>Preparación: Mezcla la harina, agua, sal, azúcar y levadura. Deja reposar 1 hora. Extiende la masa, agrega la salsa, el queso y los ingredientes. Hornea a 220°C por 12-15 minutos.</p>
-                <p><strong>Dónde conseguir los ingredientes:</strong> Supermercados locales, tiendas italianas o mercados de alimentos internacionales.</p>
-                <p><strong>Bebidas que acompañan:</strong> Vino tinto italiano, cerveza, refrescos o agua mineral.</p>
-            </div>
-            <button onclick="toggleContent(this)">Read More</button>
-        </div>
-
-        <div class="food-box">
-            <h3>Sushi (Japón)</h3>
-            <p>El sushi es un plato tradicional japonés que combina arroz avinagrado con pescado crudo, mariscos o vegetales. Es famoso por su presentación artística y sabor delicado.</p>
-            <div class="more-content">
-                <p><strong>Por qué es famoso:</strong> Es saludable, ligero y combina sabores únicos con una presentación visual atractiva. Popular en todo el mundo, especialmente en restaurantes de cocina japonesa.</p>
-                <p><strong>Receta básica de sushi rolls (makis):</strong></p>
-                <ul>
-                    <li>Arroz para sushi: 2 tazas, lavado y cocido con vinagre de arroz</li>
-                    <li>Nori (alga seca)</li>
-                    <li>Rellenos: Salmón, aguacate, pepino, atún (opcional)</li>
-                    <li>Salsa de soya, wasabi y jengibre encurtido para acompañar</li>
-                </ul>
-                <p>Preparación: Coloca una lámina de nori sobre la esterilla, extiende el arroz, agrega rellenos en el centro y enrolla firmemente. Corta en piezas y sirve con salsa de soya, wasabi y jengibre.</p>
-                <p><strong>Dónde conseguir los ingredientes:</strong> Tiendas asiáticas, supermercados con sección internacional.</p>
-                <p><strong>Bebidas que acompañan:</strong> Té verde, sake japonés, cerveza japonesa.</p>
-            </div>
-            <button onclick="toggleContent(this)">Read More</button>
-        </div>
-
-        <div class="food-box">
-            <h3>Burger (Estados Unidos)</h3>
-            <p>La hamburguesa es un icono de la comida rápida estadounidense, conocida por su carne jugosa, pan, queso y toppings variados.</p>
-            <div class="more-content">
-                <p><strong>Por qué es famosa:</strong> Es rápida de preparar, muy sabrosa y personalizable con muchos ingredientes. Es un símbolo de la comida rápida y cultura pop estadounidense.</p>
-                <p><strong>Receta básica:</strong></p>
-                <ul>
-                    <li>Carne molida de res: 200 g por burger</li>
-                    <li>Pan de hamburguesa</li>
-                    <li>Queso cheddar, lechuga, tomate, cebolla, ketchup y mostaza</li>
-                </ul>
-                <p>Preparación: Forma la carne en hamburguesas y cocina a la plancha. Arma el burger con pan, carne, queso y vegetales.</p>
-                <p><strong>Dónde conseguir los ingredientes:</strong> Supermercados locales, carnicerías y panaderías.</p>
-                <p><strong>Bebidas que acompañan:</strong> Refrescos, cerveza, batidos de frutas.</p>
-            </div>
-            <button onclick="toggleContent(this)">Read More</button>
-        </div>
-
-    </main>
-</div>
-
-<footer>
-    © 2025 Blog de Comida Internacional
-</footer>
-
-<script>
-function toggleContent(button) {
-    const more = button.previousElementSibling;
-    if (more.style.display === "block") {
-        more.style.display = "none";
-        button.textContent = "Read More";
-    } else {
-        more.style.display = "block";
-        button.textContent = "Read Less";
-    }
-}
-</script>
-
-</body>
-</html>
+        <h2>About this Blog</h2>
+        <p>Explore the most popular foods around the world, their recipes, origins, and traditions. Learn where to find ingredients and which drink
